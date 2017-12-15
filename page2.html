@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>hrudayaveena</title>
+ 
+<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+<body>
+	<style>
+
+	#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+.wrapper {
+  width:1050px;
+  height:300px;
+  position:absolute;
+  margin: 0 auto;
+  top: 100px;
+  right: 200px;
+
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+</style>
+</head>
+<video autoplay muted loop id="myVideo">
+  <source src="americandream.mp4" type="video/mp4">
+</video>
+<div class="wrapper">
+<a href="datavizfinal_yanamandala.html"><div class="centered">1.Prologue</div>
+  <img class="b-lazy" data-src="http://placehold.it/500x250/000000&text=loaded%20image" src="http://placehold.it/500x250&text=placeholder" /></a>
+  <img class="b-lazy" data-src="http://placehold.it/500x250/111111&text=loaded%20image" src="http://placehold.it/500x250&text=placeholder" />
+  <img class="b-lazy" data-src="http://placehold.it/500x250/222222&text=loaded%20image" src="http://placehold.it/500x250&text=placeholder" />
+  <img class="b-lazy" data-src="http://placehold.it/500x250/333333&text=loaded%20image" src="http://placehold.it/500x250&text=placeholder" />
+  <img class="b-lazy" data-src="http://placehold.it/500x250/4444444&text=loaded%20image" src="http://placehold.it/500x250&text=placeholder" />
+  <img class="b-lazy" data-src="http://placehold.it/500x250/555555&text=loaded%20image" src="http://placehold.it/500x250&text=placeholder" />
+  
+</div>
+
+
+
+
+<script>
+var bLazy = new Blazy({
+  success: function(){
+    updateCounter();
+  }
+});
+
+
+// not needed, only here to illustrate amount of loaded images
+
+var eleCountLoadedImages = document.getElementById('loaded-images');
+
+function updateCounter() {
+  imageLoaded++;
+  eleCountLoadedImages.innerHTML = imageLoaded;
+}
+</script>
+
+
+
+
+
+</body>
+</html>
